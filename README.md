@@ -7,7 +7,7 @@ The Credit Card Financial Report Dashboard is a Business Intelligence project bu
 
 📊 Dashboard Previewhttps
 
-Dashboard[://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png]
+[Dashboard](://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png)
 
 
 ## Objectives
@@ -131,7 +131,12 @@ credit_card[Annual_Fees] +
 credit_card[Total_Trans_Amt] +
 credit_card[Interest_Earned]
 
+
+
+
 📊 Business Insights
+
+
 Blue Cards generate the highest revenue among all card categories.
 Customers aged 30–50 years contribute the largest share of total revenue.
 Business professionals are the highest-value customer segment.

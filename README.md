@@ -5,7 +5,7 @@
 The Credit Card Financial Report Dashboard is a Business Intelligence project built using Power BI, MySQL, SQL, and DAX. It provides a comprehensive analysis of credit card transactions, customer demographics, and revenue performance. The dashboard enables stakeholders to monitor key financial metrics, identify spending trends, and make data-driven business decisions through interactive visualizations
 
 
-📊 [Dashboard](https://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png)
+📊 ![Dashboard](https://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png)
 
 
 ## Objectives

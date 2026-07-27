@@ -5,9 +5,7 @@
 The Credit Card Financial Report Dashboard is a Business Intelligence project built using Power BI, MySQL, SQL, and DAX. It provides a comprehensive analysis of credit card transactions, customer demographics, and revenue performance. The dashboard enables stakeholders to monitor key financial metrics, identify spending trends, and make data-driven business decisions through interactive visualizations
 
 
-📊 Dashboard Previewhttps
-
-[Dashboard](://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png)
+📊 [Dashboard Previewhttps](://github.com/kush-milan/Credit_card_Report/blob/main/Screenshot%20%20of%20tha%20Dahbord.png)
 
 
 ## Objectives
@@ -84,19 +82,19 @@ Connected Power BI to the MySQL database.
 
 # Age Group
 
-AgeGroup = SWITCH 
-(TRUE(),
-'cust_add'[customer_age] <30,"20=30",
-'cust_add'[customer_age] >=30 && 'cust_add'[customer_age] <40,"30-40",
-'cust_add'[customer_age] >=40 && 'cust_add'[customer_age] <50,"40-50",
-'cust_add'[customer_age] >=50 && 'cust_add'[customer_age] <60,"50-60",
-'cust_add'[customer_age] >=60, "60+",
-"unknown"
+     AgeGroup = SWITCH 
+    (TRUE(),
+     'cust_add'[customer_age] <30,"20=30",
+    'cust_add'[customer_age] >=30 && 'cust_add'[customer_age] <40,"30-40",
+    'cust_add'[customer_age] >=40 && 'cust_add'[customer_age] <50,"40-50",
+    'cust_add'[customer_age] >=50 && 'cust_add'[customer_age] <60,"50-60",
+    'cust_add'[customer_age] >=60, "60+",
+    "unknown"
 )
 
-# IncomeGroup
+#  IncomeGroup
 
-IncomeGroup = SWITCH(
+    IncomeGroup = SWITCH(
     TRUE(),
     'cust_add'[Income]<35000, "Low",
     'cust_add'[Income] >= 35000 &&'cust_add'[Income] <70000, "med",
@@ -107,10 +105,11 @@ IncomeGroup = SWITCH(
 #  Week_Num2
 
     Week_Num2 = WEEKNUM('credit_card'[Week_Start_Date])
+    
 
 # Previous_Week_Revenue
 
-Previous_Week_Revenue = CALCULATE(
+    Previous_Week_Revenue = CALCULATE(
     SUM('credit_card'[Revenue]),
     FILTER(
         ALL('credit_card'),
@@ -118,7 +117,7 @@ Previous_Week_Revenue = CALCULATE(
 
 # Current_Week_Revenue
 
-Current_Week_Revenue = CALCULATE(
+    Current_Week_Revenue = CALCULATE(
     SUM('credit_card'[Revenue]),
     FILTER(
         ALL('credit_card'),
@@ -126,10 +125,10 @@ Current_Week_Revenue = CALCULATE(
         
 # Revenue
 
-Revenue =
-credit_card[Annual_Fees] +
-credit_card[Total_Trans_Amt] +
-credit_card[Interest_Earned]
+    Revenue =
+    credit_card[Annual_Fees] +
+    credit_card[Total_Trans_Amt] +
+    credit_card[Interest_Earned]
 
 
 

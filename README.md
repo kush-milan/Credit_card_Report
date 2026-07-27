@@ -34,7 +34,7 @@ Microsoft Excel
 📂 Dataset
 The project uses two datasets:
 
-1. credit_card
+1. [credit_card](https://github.com/kush-milan/Credit_card_Report/blob/main/credit_card.csv)
 
 Contains transaction details such as:
 
